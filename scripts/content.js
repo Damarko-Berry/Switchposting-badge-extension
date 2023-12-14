@@ -15,7 +15,7 @@ function FindMemb() {
     
 }
 
-function CheckFLare(url, text, bg, tc) {
+async function CheckFLare(url, text, bg, tc) {
 
     fetch(url).then(response => response.text()).then(data => {
         const namesArray = data.split('\n');
