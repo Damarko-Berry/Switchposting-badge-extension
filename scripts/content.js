@@ -1,7 +1,7 @@
-﻿const Mario = "https://raw.githubusercontent.com/Damarko-Berry/testye/main/Dummies.txt";
-const Zelda = "https://raw.githubusercontent.com/Damarko-Berry/testye/main/Zelda.txt";
-const Kirby = "https://raw.githubusercontent.com/Damarko-Berry/testye/main/Kirby.txt";
-const Pokemon = "https://raw.githubusercontent.com/Damarko-Berry/testye/main/Pokemon.txt";
+﻿const Mario = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Dummies.txt";
+const Zelda = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Zelda.txt";
+const Kirby = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Kirby.txt";
+const Pokemon = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Pokemon.txt";
 
 function FindMemb() {
     console.log("Mario");
