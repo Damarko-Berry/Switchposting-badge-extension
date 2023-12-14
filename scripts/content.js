@@ -7,11 +7,11 @@ function FindMemb() {
     console.log("Mario");
     CheckFLare(Mario, "Mario🍄", "white", "red");
     console.log("Zelda");
-    CheckFLare(Zelda, "Zelda⚔",  "green", "yellow");
+    CheckFLare(Zelda, "Zelda⚔", "#005A39", "#F8DE55");
     console.log("Kirby");
-    CheckFLare(Kirby, "Kirby🍲", "pink", "yellow");
+    CheckFLare(Kirby, "Kirby🍲", "#CE1756", "#E3B968");
     console.log("Pokemon");
-    CheckFLare(Pokemon, "Pokémon⛹🏻‍♂️", "blue", "yellow");
+    CheckFLare(Pokemon, "Pokémon⛹🏻‍♂️", "#4773F6", "#FEFD0F");
     
 }
 
