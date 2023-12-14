@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Switchposting",
+  "description": "Adds Reddit style flares while scrolling through the switchposting group",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "js": [ "scripts/content.js" ],
+      "matches": [
+        "https://www.facebook.com/groups/SwitchpostingJr/*",
+        "https://www.facebook.com/groups/690637661273274/*"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [ "activeTab", "scripting", "storage", "downloads" ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
