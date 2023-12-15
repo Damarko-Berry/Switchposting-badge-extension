@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/SB_updater.exe
+/req/Kirby.txt
+/req/Mario.txt
+/req/Pokemon.txt
+/req/Zelda.txt
