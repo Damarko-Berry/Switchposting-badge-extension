@@ -1,9 +1,14 @@
-﻿const Mario = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Dummies.txt";
+﻿const Mario = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Mario.txt";
 const Zelda = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Zelda.txt";
 const Kirby = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Kirby.txt";
 const Pokemon = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Pokemon.txt";
 
 function FindMemb() {
+    var domain = url.hostname.toString(); // `domain` is now a string like 'example.com'
+    if (!domain.includes("https://www.facebook.com/groups/")) {
+        console.log("NOpe")
+        return;
+    }
     console.log("Mario");
     CheckFLare(Mario, "Mario🍄", "mario");
     console.log("Zelda");
@@ -14,6 +19,7 @@ function FindMemb() {
     CheckFLare(Pokemon, "Pokémon⛹🏻‍♂️", 'pokemon');
     
 }
+
 
 async function CheckFLare(url, text, style) {
 
