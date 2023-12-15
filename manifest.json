@@ -12,7 +12,7 @@
       "js": [ "scripts/content.js" ],
       "css": [ "scripts/badges.css" ],
       "matches": [
-        "https://www.facebook.com/groups/*"
+        "https://www.facebook.com/*"
       ]
     }
   ],

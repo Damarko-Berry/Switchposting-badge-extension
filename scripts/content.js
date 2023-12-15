@@ -4,23 +4,25 @@ const Kirby = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Fla
 const Pokemon = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Pokemon.txt";
 
 function FindMemb() {
-    var domain = url.hostname.toString(); // `domain` is now a string like 'example.com'
-    if (!domain.includes("https://www.facebook.com/groups/")) {
-        console.log("NOpe")
-        return;
+    url = getCurrentDomain().toString();
+    if (url.includes("https://www.facebook.com/groups/SwitchpostingJr") |
+        url.includes("https://www.facebook.com/groups/690637661273274")) {
+        console.log("Mario");
+        CheckFLare(Mario, "Mario🍄", "mario");
+        console.log("Zelda");
+        CheckFLare(Zelda, "Zelda⚔", 'zelda');
+        console.log("Kirby");
+        CheckFLare(Kirby, "Kirby🍲", 'kirby');
+        console.log("Pokemon");
+        CheckFLare(Pokemon, "Pokémon⛹🏻‍♂️", 'pokemon');
     }
-    console.log("Mario");
-    CheckFLare(Mario, "Mario🍄", "mario");
-    console.log("Zelda");
-    CheckFLare(Zelda, "Zelda⚔", 'zelda');
-    console.log("Kirby");
-    CheckFLare(Kirby, "Kirby🍲", 'kirby');
-    console.log("Pokemon");
-    CheckFLare(Pokemon, "Pokémon⛹🏻‍♂️", 'pokemon');
     
 }
 
-
+function getCurrentDomain() {
+    // Get the full URL of the current page
+    return window.location.href;
+}
 async function CheckFLare(url, text, style) {
 
     fetch(url).then(response => response.text()).then(data => {
