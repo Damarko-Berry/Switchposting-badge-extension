@@ -5,23 +5,23 @@ const Pokemon = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-F
 
 function FindMemb() {
     console.log("Mario");
-    CheckFLare(Mario, "Mario🍄", "white", "red");
+    CheckFLare(Mario, "Mario🍄", "mario");
     console.log("Zelda");
-    CheckFLare(Zelda, "Zelda⚔", "#005A39", "#F8DE55");
+    CheckFLare(Zelda, "Zelda⚔", 'zelda');
     console.log("Kirby");
-    CheckFLare(Kirby, "Kirby🍲", "#CE1756", "#E3B968");
+    CheckFLare(Kirby, "Kirby🍲", 'kirby');
     console.log("Pokemon");
-    CheckFLare(Pokemon, "Pokémon⛹🏻‍♂️", "#4773F6", "#FEFD0F");
+    CheckFLare(Pokemon, "Pokémon⛹🏻‍♂️", 'pokemon');
     
 }
 
-async function CheckFLare(url, text, bg, tc) {
+async function CheckFLare(url, text, style) {
 
     fetch(url).then(response => response.text()).then(data => {
         const namesArray = data.split('\n');
         const filteredNames = namesArray.filter(name => name.trim() !== '');
         for (var i = 0; i < filteredNames.length; i++) {
-            creatFlare(ChecSpans(filteredNames[i]), text, bg, tc);
+            creatFlare(ChecSpans(filteredNames[i]), text, style);
         }
     }).catch(error => {
         console.error('Error fetching the file:', error);
@@ -39,12 +39,13 @@ function ChecSpans(name) {
     }
     return null;
 }
-function creatFlare(span, Flare, bg, tc) {
+function creatFlare(span, Flare, style) {
     if (span == null) return;
+
     var sp = document.createElement('span');
+    sp.classList.add(style)
     sp.textContent = " " + Flare + " ";
-    sp.style.color = tc;
-    sp.style.backgroundColor = bg;
+    
     span.appendChild(sp);
 
 }

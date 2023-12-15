@@ -10,6 +10,7 @@
   "content_scripts": [
     {
       "js": [ "scripts/content.js" ],
+      "css": [ "scripts/badges.css" ],
       "matches": [
         "https://www.facebook.com/groups/SwitchpostingJr/*",
         "https://www.facebook.com/groups/690637661273274/*"
