@@ -2,19 +2,27 @@
 const Zelda = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Zelda.txt";
 const Kirby = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Kirby.txt";
 const Pokemon = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Pokemon.txt";
+const Metroid = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Metroid.txt";
+const DK = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/DK.txt";
+const EarthBound = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/EarthBound.txt";
+const Yoshi = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Yoshi.txt";
 
 function FindMemb() {
     url = getCurrentDomain().toString();
     if (url.includes("https://www.facebook.com/groups/SwitchpostingJr") |
         url.includes("https://www.facebook.com/groups/690637661273274")) {
-        console.log("Mario");
+        
         CheckFLare(Mario, "Mario🍄", "Mario");
-        console.log("Zelda");
+       
         CheckFLare(Zelda, "Zelda⚔", 'Zelda');
-        console.log("Kirby");
+        
         CheckFLare(Kirby, "Kirby🍲", 'Kirby');
-        console.log("Pokemon");
+        
         CheckFLare(Pokemon, "Pokémon⛹🏻‍♂️", 'Pokemon');
+        CheckFLare(Metroid, "Metroid🚀", 'Metroid');
+        CheckFLare(DK, "DK🦍", 'DK');
+        CheckFLare(EarthBound, "Mother🌍", 'EarthBound');
+        CheckFLare(Yoshi, "Yoshi🐱‍🐉", 'Yoshi');
     }
     
 }
