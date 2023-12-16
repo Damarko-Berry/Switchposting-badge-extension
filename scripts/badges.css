@@ -1,42 +1,58 @@
-.Mario{
+.Mario {
     background-color: white;
     color: red;
+    font-weight: bold;
 }
 
 .Zelda {
     background-color: #005A39;
     color: #F8DE55;
-
+    font-weight: bold;
+   
 }
 
 .Kirby {
     background-color: #ce1756;
     color: #e3b968;
+    font-weight: bold;
+
 }
 
 .Pokemon {
     background-color: #4773f6;
     color: #FEFD0F;
+    font-weight: bold;
 }
 
 .Metroid {
     background-color: #EB0000;
-    color: #DB6914;
+    color: #ff8505;
+    font-weight: bold;
 }
 
 .DK {
     background-color: #5e311f;
     color: #EB0000;
-    
+    font-weight: bold;
 }
 
 .EarthBound {
     background-color: #3958BF;
     color: #C22424;
+    font-weight: bold;
 }
 
 .Yoshi {
     background-color: #87ef69;
     color: #C22424;
+    font-weight: bold;
+    
+}
+
+.Rounded {
+    border-radius: 5px;
+    padding: 2px;
+    width: 12px;
+    height: 12px;
 }
 

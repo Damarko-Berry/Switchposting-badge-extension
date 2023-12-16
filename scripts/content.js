@@ -1,11 +1,11 @@
-﻿const Mario = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Mario.txt";
-const Zelda = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Zelda.txt";
-const Kirby = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Kirby.txt";
-const Pokemon = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Pokemon.txt";
-const Metroid = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Metroid.txt";
-const DK = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/DK.txt";
-const EarthBound = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/EarthBound.txt";
-const Yoshi = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-Flare-extention/master/Lists/Yoshi.txt";
+﻿const Mario = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-badge-extension/master/Lists/Mario.txt";
+const Zelda = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-badge-extension/master/Lists/Zelda.txt";
+const Kirby = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-badge-extension/master/Lists/Kirby.txt";
+const Pokemon = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-badge-extension/master/Lists/Pokemon.txt";
+const Metroid = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-badge-extension/master/Lists/Metroid.txt";
+const DK = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-badge-extension/master/Lists/DK.txt";
+const EarthBound = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-badge-extension/master/Lists/EarthBound.txt";
+const Yoshi = "https://raw.githubusercontent.com/Damarko-Berry/Switchposting-badge-extension/master/Lists/Yoshi.txt";
 
 function FindMemb() {
     url = getCurrentDomain().toString();
@@ -57,20 +57,21 @@ function ChecSpans(name) {
 }
 function creatFlare(span, Flare, style) {
     if (span == null) return;
-
+    span.textContent += " ";
     var sp = document.createElement('span');
     sp.classList.add(style)
-    sp.textContent = " " + Flare + " ";
+    sp.classList.add("Rounded")
+    sp.textContent = Flare;
     
     span.appendChild(sp);
 
 }
 function ImgFlare(span, url) {
     if (span == null) return;
-
+    span.textContent += " ";
     var sp = document.createElement('span');
     sp.classList.add(style)
-    sp.textContent = " " + Flare + " ";
+    sp.textContent = Flare;
     
     span.appendChild(sp);
 
