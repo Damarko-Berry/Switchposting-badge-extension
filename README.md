@@ -10,7 +10,7 @@ More badges will be added in the future. Also, I'll be hosting the files and ext
 # How to Set up:
 1: download the latest release
 
-2: Unzip Manifest.zip
+2: Unzip SwitchBadge.zip
 > # Chrome:
 
 > Go to chrome://extensions/.
